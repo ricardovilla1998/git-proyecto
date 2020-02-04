@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, serif;
+}
+
+/* ----------- HEADER ------------ */
+
+header {
+    background: #02106C;
+    height: 65px;
+    overflow: auto;
+    line-height: 65px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* --- Logo --- */
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+/* --- Nav --- */
+
+nav {
+    float: right;
+}
+
+.div-carrusel {
+    flex: 1;
+}
+
+/* ----------- CONTENIDO PRINCIPAL ------------ */
+
+.contenedor {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/* --- Descripcion --- */
+.descripcion {
+    flex: 1;
+}
+
+.descripcion h1 {
+    color: #02106C;
+    text-transform: uppercase;
+}
+
+.descripcion h3 {
+    color: #888888;
+    text-transform: uppercase;
+    border-bottom: 1px solid #888888;
+    margin-right: 10vw;
+    margin-bottom: 15px;
+}
+
+.texto p {
+    color: #888888;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.botones {
+    margin: 1.5em 0em 1.5em 0em;
+}
+
+.botones button {
+    padding: 1em 2em 1em 2em;
+    text-transform: uppercase;
+    border: 1px solid #F831F1;
+    cursor: pointer;
+}
+
+#ver-mas {
+    background: white;
+    color: #F831F1;
+    transition: background 0.5s;
+}
+
+#cotizar {
+    background: #F831F1;
+    color:white;
+    transition: background 0.5s;
+}
+
+#ver-mas:hover {
+    background: rgb(228, 243, 255);
+}
+
+#cotizar:hover {
+    background: lightpink;
+}
+
+.usuario {
+    color: white;
+    background: #02106C;
+    position: fixed;
+    padding: 20px;
+    right: 0;
+    bottom: 0;
+}
+
+.usuario a {
+    color: lightblue;
+}
+
+.img-fondo2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    opacity: 0.1;
+}
+
+/* ----------- RESPONSIVO ------------- */
+
+@media screen and (max-width:800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .texto {
+        margin-top: 5vh;
+    }
+
+    .texto h1, h3, p {
+        text-align: center;
+    }
+
+    .texto h3 {
+        margin-right: 0;
+    }
+
+}
